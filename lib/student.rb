@@ -1,6 +1,7 @@
 require_relative "./user"
 
 class Student < User
+    attr_reader :knowledge
 
     def initialize
         @knowledge = []
@@ -9,10 +10,5 @@ class Student < User
     def learn(item)
         @knowledge << item
     end
-
-    def knowledge
-        @knowledge
-    end
-    
 
 end
